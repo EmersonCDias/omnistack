@@ -34,8 +34,6 @@ module.exports = {
     // Get user information
     const response = await axios.get(`https://api.github.com/users/${username}`)
 
-    console.log('response', response.data)
-
     // Payload
     const { name, bio, avatar_url } = response.data
 
